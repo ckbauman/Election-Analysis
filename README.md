@@ -70,12 +70,13 @@ We were able to produce this information using python code below:
 > 
 4. Write a decision statement with a logical operator to check if the county name acquired in Step 3 is in the county list you created in Step 1. Write a script that initializes the county vote to zero, like you did when you began to track the vote counts for the candidates.  Write a script that adds a vote to the county’s vote count as you are looping through all the rows, like you did for the candidate’s vote count.
 > 4a: Write an if statement that checks that the county does not match any existing county in the county list.
-> 
-> if county_name not in county_options:
->>b: Add the existing county to the list of counties.
->>county_options.append(county_name)
->>4c: Begin tracking the county's vote count.
->>county_votes[county_name] = 0
+        if county_name not in county_options:
+
+            # 4b: Add the existing county to the list of counties.
+            county_options.append(county_name)
+
+            # 4c: Begin tracking the county's vote count.
+            county_votes[county_name] = 0
 5.
 - Write a repetition statement to get the county from the county dictionary that was created in Step 1.
 - Initialize a variable to hold the county’s votes as they are retrieved from the county votes dictionary.
