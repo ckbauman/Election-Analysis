@@ -45,6 +45,8 @@ Our primary outcomes conclude:
 
 - Provide a breakdown of number of votes and percentage of total votes each candidate received.
 
+![candidate breakout](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Candidate_breakout.png)
+
 - Which candidate won the election, what was their perentage of the total votes?
 
 
