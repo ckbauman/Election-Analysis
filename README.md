@@ -12,7 +12,7 @@ local congressional election.
 4. Calculate the percentage of votes each candidate won
 5. Determine the winner of the election based on popular vote
 
-## Resources - Election Augit Results
+## Resources - Election Audit Results
 
 - Data Source: election_results.csv
 - Data Output: election_analysis.txt
@@ -21,12 +21,13 @@ local congressional election.
 The following includes outcomes for the congressional election.  We were able to determine what candidate won
 and show distribution of voting by each county.
 
-We produced the outcome to the termminal.
+We produced the outcome to the terminal.
 
 ![Terminal Outcome](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Terminal_Output.png)
 
-We also produced the outcome to a txt file (located in the %Analysis% folder)
+We also produced the outcome to a txt file (located in the **Analysis** folder)
 
+![Textfile Outcome](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Textfile_Output.png)
 
 
 
