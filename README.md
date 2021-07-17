@@ -23,6 +23,11 @@ and show distribution of voting by each county.
 
 We produced the outcome to the termminal.
 
+![Terminal Outcome](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Terminal_Output.png)
+
+We also produced the outcome to a txt file (located in the %Analysis% folder)
+
+
 
 
 ## Summary
