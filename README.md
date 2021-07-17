@@ -1,9 +1,9 @@
 # Election-Analysis
 Module 3
 
-## Project Overview
+## Project Overview of Election Audit
 
-A Colorado Board of Elections employee has given you the following tasks to complete the electiion audit of a recent
+A Colorado Board of Elections has acked for the following tasks to complete the electiion audit of a recent
 local congressional election.
 
 1. Calculate the total number of votes cast
@@ -12,10 +12,18 @@ local congressional election.
 4. Calculate the percentage of votes each candidate won
 5. Determine the winner of the election based on popular vote
 
-## Resources
+## Resources - Election Augit Results
 
 - Data Source: election_results.csv
+- Data Output: election_analysis.txt
 - Software: Python 3.6.7, Visual Studio Code, 1.38.1
+
+The following includes outcomes for the congressional election.  We were able to determine what candidate won
+and show distribution of voting by each county.
+
+We produced the outcome to the termminal.
+
+
 
 ## Summary
 
