@@ -49,7 +49,7 @@ Our primary outcomes conclude:
 
 - Which candidate won the election, what was their perentage of the total votes?
 
-
+![candidate winner](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Candidate_winner.png)
 
 ## Summary
 
