@@ -148,8 +148,6 @@ The analysis of the election show that:
 - The winner of the election was:
   - Candidate 2 who received 73.8% of the vote and 272,892 number of votes
 
-In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
-
 This Election Analysis is specific to show Candidates and County totals.  It is designed to work with any number of candicates or county value ranges.  We could modify it to:
 - show candidate values within each county
 - show county values for each candidate
