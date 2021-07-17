@@ -70,7 +70,7 @@ high_percentage = 0
 ```
 county_name = row[1]
 ```
-4.
+4. Get unique county names
 - Write a decision statement with a logical operator to check if the county name acquired in Step 3 is in the county list you created in Step 1.
 - If the county is not in the list created in Step 1, add it to the list of county names like you did when adding a candidate to the candidate_options list.
 - Write a script that initializes the county vote to zero, like you did when you began to track the vote counts for the candidates.
@@ -89,7 +89,7 @@ county_name = row[1]
 ```
 county_votes[county_name] += 1
 ```
-6.
+6. County values
 - Write a repetition statement to get the county from the county dictionary that was created in Step 1.
 - Initialize a variable to hold the county’s votes as they are retrieved from the county votes dictionary.
 - Write a script that calculates the county’s votes as a percentage of the total votes.
