@@ -55,7 +55,9 @@ We were able to produce this information using python code below:
 
 1. Initialize a county list that will hold the names of the counties.  Initialize a dictionary that will hold the county as the key and the votes cast for each county as the values.
 > county_options = []
+> 
 > county_votes = {}
+
 3. Initialize an empty string that will hold the county name for the county with the largest turnout. Initialize a variable that will hold the number of votes of the county that had the largest turnout.
 4. While reading the election results from each row inside the for loop, write a script that gets the county name from each row.
 5. 
