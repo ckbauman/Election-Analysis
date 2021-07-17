@@ -29,6 +29,20 @@ We also produced the outcome to a txt file (located in the **Analysis** folder)
 
 ![Textfile Outcome](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Textfile_Output.png)
 
+Our primary outcomes conclude:
+
+- How many votes were cast in this congressional election?
+
+![election total](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Election_total.png)
+
+- Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
+
+- Which county had the largest number of votes?
+
+- Provide a breakdown of number of votes and percentage of total votes each candidate received.
+
+- Which candidate won the election, what was their perentage of the total votes?
+
 
 
 ## Summary
