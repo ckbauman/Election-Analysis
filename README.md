@@ -33,13 +33,15 @@ Our primary outcomes conclude:
 
 - How many votes were cast in this congressional election?
 
-      ![election total](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Election_total.png)
+![election total](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Election_total.png)
 
 - Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
 
-      ![counties breakout](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Counties_breakout.png)
+![counties breakout](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Counties_breakout.png)
 
 - Which county had the largest number of votes?
+
+![counties winner](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/counties_winner.png)
 
 - Provide a breakdown of number of votes and percentage of total votes each candidate received.
 
