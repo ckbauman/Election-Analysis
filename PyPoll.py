@@ -89,9 +89,9 @@
 
 #     # write data to file in 3 rows
 #     txt_file.write("Counties in the Election\n-----------\nArapahoe\nDenver\nJefferson")
+# ========================================================================================
+#                     3.6 ELECTION RESULTS
 
-# ============================================================================================
-#                       3.4.4 READ the ELECTION RESULTS
 # add our dependencies
 import csv
 import os
@@ -220,14 +220,127 @@ with open(file_to_save, "w") as txt_file:
 # print the total votes outside the for  loop
 #print(total_votes)
     
-    ## Read and print the header row.
-    #   headers = next(file_reader)
-    #       print(headers)
+#     ## Read and print the header row.
+#     #   headers = next(file_reader)
+#     #       print(headers)
 
-    # # print each row in the csv file
-    # for row in file_reader:
-    #     print(row)
+#     # # print each row in the csv file
+#     # for row in file_reader:
+#     #     print(row)
 
+# ============================================================================================
+# #                       MODULE 3 CHALLENGE
+# # add our dependencies
+# import csv
+# import os
+
+# # assign a variable to load a file from a path
+# file_to_load = os.path.join("Resources", "election_results.csv")
+
+# # assign a variable to save the file to a path
+# file_to_save = os.path.join("analysis", "election_analysis.txt")
+
+# # initial total votes to zero before open the csv file so always start at zero
+# total_votes = 0
+
+# # list of counties from 3rd column of data
+# county_options = []
+
+# # dictionary of county votes
+# county_votes = {}
+
+# # high county and high count tracker
+# high_county = ""
+# high_count = 0
+# high_percentage = 0
+
+
+# # open the election results and read the file
+# with open(file_to_load) as election_data:
+
+#     # to do: read and analyze the data here
+#     # read the file object with the reader function
+#     file_reader = csv.reader(election_data)
+
+#     # Read the header row
+#     headers = next(file_reader)
+
+#     # print each row in the CSV rile
+#     for row in file_reader:
+#         # add to the total vote count increment by 1
+#         total_votes += 1
+
+#         # Get the county name from each row with 2nd column
+#         county_name = row[1]
+
+#         # add the county name to the county list - will get everything in column 2
+#         # county_options.append(county_name)
+
+#         # if the county does not match any existing county (to get unique names)
+#         if county_name not in county_options:
+#             # add it to the list of counties
+#             county_options.append(county_name)
+
+#             # begin tracking county vote count in dictionary
+#             county_votes[county_name] = 0
+
+#     # add a vote to that county count to get their total
+#         county_votes[county_name] += 1
+
+# # save the results to our text file
+# with open(file_to_save, "w") as txt_file:
+
+#      # after opening the file,Print the final vote count to the terminal
+#     election_results = (
+#         f"\nElection Results\n"
+#         f"-------------------------\n"
+#         f"total votes: {total_votes:,}\n"
+#         f"-------------------------\n")
+#     print(election_results, end="")
+        
+#      # after printing final vote count to terminal, Save the final vote count to the text file
+#     txt_file.write(election_results)
+
+#     # determine the percentage of votes for each county by looping through the counts
+#     # iterate through the county list
+#     for county_name in county_votes:
+#         # retrieve vote count of a county
+#         votes = county_votes[county_name]
+#         # calculate the percentage of votes and change to float from int
+#         vote_percentage = float(votes) / float(total_votes) * 100
+
+#         # get the county name and percentage of votes to 1 decimal place
+#         county_results = (f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        
+#         # print final county results to the terminal
+#         print(county_results)
+
+#         #save the county results to our text file
+#         txt_file.write(county_results)
+
+#         # determine highest vote count and county
+#         # determine if the votes is greater than the highest county
+#         if (votes > high_count) and (vote_percentage > high_percentage):
+#             # if true then set high_count = votes and high_percent = vote_percentage
+#             high_count = votes
+#             high_percentage = vote_percentage
+#             # and set the high county equal to the counties name
+#             high_county = county_name
+
+#     # print the highest county results to terminal
+#     high_county_summary = (
+#         f"--------------------\n"
+#         f"Highest: {high_county}\n"
+#         f"Highest vote count: {high_count:,}\n"
+#         f"Highest percentage: {high_percentage:.1f}%\n"
+#         f"---------------------\n")
+
+#     print(high_county_summary)
+
+
+#     #save the highest county results to the text file
+#     txt_file.write(high_county_summary)
+   
 
 
 
