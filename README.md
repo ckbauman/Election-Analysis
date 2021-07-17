@@ -51,7 +51,7 @@ Our primary outcomes conclude:
 
 ![candidate winner](https://github.com/ckbauman/Election-Analysis/blob/main/analysis/Candidate_winner.png)
 
-We were able to produce this information using python code below:
+We were able to produce this information using Visual Studio and Python code below:
 
 1. Initialize a county list that will hold the names of the counties.  Initialize a dictionary that will hold the county as the key and the votes cast for each county as the values.
 ```
@@ -60,17 +60,23 @@ county_votes = {}
 ```
 
 2. Initialize an empty string that will hold the county name for the county with the largest turnout. Initialize a variable that will hold the number of votes of the county that had the largest turnout.
->high_county = ""
->
-> high_count = 0
-> 
->high_percentage = 0
+```
+high_county = ""
+high_count = 0
+high_percentage = 0
+```
 
 3. While reading the election results from each row inside the for loop, write a script that gets the county name from each row.
-> county_name = row[1]
-> 
-4. Write a decision statement with a logical operator to check if the county name acquired in Step 3 is in the county list you created in Step 1. Write a script that initializes the county vote to zero, like you did when you began to track the vote counts for the candidates.  Write a script that adds a vote to the county’s vote count as you are looping through all the rows, like you did for the candidate’s vote count.
-> 4a: Write an if statement that checks that the county does not match any existing county in the county list.
+```
+county_name = row[1]
+```
+4.
+- Write a decision statement with a logical operator to check if the county name acquired in Step 3 is in the county list you created in Step 1.
+- If the county is not in the list created in Step 1, add it to the list of county names like you did when adding a candidate to the candidate_options list.
+- Write a script that initializes the county vote to zero, like you did when you began to track the vote counts for the candidates.
+```
+4a: Write an if statement that checks that the
+        # county does not match any existing county in the county list.
         if county_name not in county_options:
 
             # 4b: Add the existing county to the list of counties.
@@ -78,31 +84,66 @@ county_votes = {}
 
             # 4c: Begin tracking the county's vote count.
             county_votes[county_name] = 0
-5.
+```
+5. Write a script that adds a vote to the county’s vote count as you are looping through all the rows, like you did for the candidate’s vote count.
+```
+county_votes[county_name] += 1
+```
+6.
 - Write a repetition statement to get the county from the county dictionary that was created in Step 1.
 - Initialize a variable to hold the county’s votes as they are retrieved from the county votes dictionary.
 - Write a script that calculates the county’s votes as a percentage of the total votes.
 - Write a print statement that prints the current county, its percentage of the total votes, and its total votes to the command line.
 - Write a script that saves each county, the county’s total votes, and the county’s percentage of total votes to the election_results.txt file.
 - Write a decision statement that determines the county with the largest vote count and then adds that county and its vote count to the variables created in Step 2.
-8.  Write a print statement that prints out the county with the largest turnout.
-9.  Write a script that saves the county with the largest turnout to the election_results.txt file.
+```
+6a: Write a for loop to get the county from the county dictionary.
+    for county_name in county_votes:
+        # 6b: Retrieve the county vote count.
+        votes = county_votes[county_name]
+        # 6c: Calculate the percentage of votes for the county.
+        vote_percentage = float(votes) / float(total_votes) * 100
+
+         # 6d: Print the county results to the terminal.
+        county_results = (f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        print(county_results)
+         # 6e: Save the county votes to a text file.
+        txt_file.write(county_results)
+         # 6f: Write an if statement to determine the winning county and get its vote count.
+        if (votes > high_count) and (vote_percentage > high_percentage):
+            # if true then set high_count = votes and high_percent = vote_percentage
+            high_count = votes
+            high_percentage = vote_percentage
+            # and set the high county equal to the counties name
+            high_county = county_name
+```
+7.  Write a print statement that prints out the county with the largest turnout.
+```
+high_county_summary = (
+        f"--------------------\n"
+        f"Highest: {high_county}\n"
+        f"Highest vote count: {high_count:,}\n"
+        f"Highest percentage: {high_percentage:.1f}%\n"
+        f"---------------------\n")
+
+    print(high_county_summary)
+```
+8.  Write a script that saves the county with the largest turnout to the election_results.txt file.
+```
+txt_file.write(high_county_summary)
+```
 
 
 ## Summary
 
 The analysis of the election show that:
 - The candidates were:
-  - candidate 1
-  - candidate 2
-  - canddidate 3
+  - candidate 1: Charles Casper Stockham
+  - candidate 2: Diana DeGette
+  - candidate 3: Raymon Anthony Doane
 - The candidate results were:
-  - candidate 1 recived x% of the vote and y number of votes
-  - candidate 2 received x% of the vote and y number of votes
-  - candidate 3 received x% of the vote and y number of votes
+  - candidate 1 recived 23.0% of the vote and 85,213 number of votes
+  - candidate 2 received 73.8% of the vote and 272,892 number of votes
+  - candidate 3 received 3.1% of the vote and 11,606 number of votes
 - The winner of the election was:
-  - Candidate 1,2,3 who received x% of the vote and y number of votes
-
-## Challenge Overview
-
-## Challenge Summary
+  - Candidate 2 who received 73.8% of the vote and 272,892 number of votes
