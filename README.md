@@ -58,8 +58,14 @@ We were able to produce this information using python code below:
 > 
 > county_votes = {}
 
-3. Initialize an empty string that will hold the county name for the county with the largest turnout. Initialize a variable that will hold the number of votes of the county that had the largest turnout.
-4. While reading the election results from each row inside the for loop, write a script that gets the county name from each row.
+2. Initialize an empty string that will hold the county name for the county with the largest turnout. Initialize a variable that will hold the number of votes of the county that had the largest turnout.
+>high_county = ""
+>
+> high_count = 0
+> 
+>high_percentage = 0
+
+3. While reading the election results from each row inside the for loop, write a script that gets the county name from each row.
 5. 
 - Write a decision statement with a logical operator to check if the county name acquired in Step 3 is in the county list you created in Step 1
 - If the county is not in the list created in Step 1, add it to the list of county names like you did when adding a candidate to the candidate_options list.
